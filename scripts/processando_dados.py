@@ -12,7 +12,6 @@ conn = mysql.connector.connect(
 query = "SELECT * FROM cursos_prouni"
 df = pd.read_sql(query, conn)
 
-
 # Só verificando se há valores nulos na base do banco de dados
 print(df.isnull().sum())
 
